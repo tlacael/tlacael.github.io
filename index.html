@@ -54,22 +54,24 @@
 
         
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron" id="suki">
       <div class="container jumbo">
-        <h1 class="jumbo-head">Meet Suki</h1>
+        <h1 class="jumbo-head">Suki</h1>
         <p class="jumbo-subhead">Bringing powerful technology to creative musicians.</p>
        <!-- <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p> -->
-          <div class="row chevron">
-              <i class="fa fa-chevron-down fa-3x faa-float animated"></i>
-          </div>
+
       </div>  <!-- /container --> 
+        <div class="chevron">
+        <i class="fa fa-chevron-down fa-3x faa-float animated"></i>
+        </div>
+
     </div> <!-- /jumbotron-->
 
         
         <div class="wrapper">
         
         <!-- About Section -->
-        <div class="container" id="about">
+        <div class="container section" id="about">
             <div class="row">
                 <div class="col-md-12">
                     <h1>About</h1>
@@ -79,7 +81,7 @@
             </div>  <!-- /row -->
 
 
-            <div class="row row">
+            <div class="row">
                 <div class="video-wrapper">
                     <div class="col-md-12 video-container">
                         <iframe id="ytplayer" type="text/html"
@@ -117,7 +119,7 @@ src="https://www.youtube.com/embed/mk5bsFPz-nQ?fs=1&modestbranding=1&rel=0&showi
         
         
         <!-- Team Section -->
-        <div class="ribbon" id="team-ribbon">
+        <div class="ribbon section" id="team-ribbon">
             <div class="container" id="team">
                 <div class="row  row-centered">
                     <div class="col-md-12">
@@ -145,7 +147,7 @@ src="https://www.youtube.com/embed/mk5bsFPz-nQ?fs=1&modestbranding=1&rel=0&showi
         </div>
 
         <!-- Contact Section -->
-        <div class="container" id="contact">
+        <div class="container section" id="contact">
             <div class="row">
                 <div class="col-md-12">
                     <h1>Contact</h1>
@@ -214,6 +216,10 @@ src="https://www.youtube.com/embed/mk5bsFPz-nQ?fs=1&modestbranding=1&rel=0&showi
 
 
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+            <script>
+                $("#suki").backstretch("/img/suki_on_drum.jpg"), {centeredY:false, centeredX:false};
+            </script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
