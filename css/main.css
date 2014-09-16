@@ -98,13 +98,19 @@ p {
 }
 
 
+.jumbotron p{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
 .jumbo {
     /* absolute center .splash within .splash-container */
     width: 80%;
-    height: 50%;
+    height: 60%;
     margin: auto;
     position: absolute;
-    top: 50px; left: 0; bottom: 0; right: 0;
+    top: 40px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: none;
     color:white;
@@ -161,40 +167,41 @@ p {
 /* medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
      .jumbo{
-        width: 80%;
+        width: 70%;
         height: 60%;
         top: 0px; left: 0; bottom: 0; right: 0;
      }
 
-    .jumbo-head{
-        padding: 1em 1.6em;
+    .jumbo p{
+        font-size: 1.5em;
+
     }
 }
 
 
 /* For small devices (iPhone) in landscape */
 @media (max-height:400px){
-    .jumbotron {
-        padding: 20px;
-        margin-bottom: 20px;
 
-    }
 
     .jumbo{
-        width: 96%;
-        height: 80%;
-        top: 20px;
-        margin: 0;
+        width: 60%;
+        height: 40%;
+        top: 10px;
+        margin: 0 auto;
     }
 
+    .jumbo-subhead{
+
+    }
     .jumbotron p{
-        font-size: 1.2em;
-        font-weight: 400;
-        padding: 0;
+        font-size: 1.25em;
+        font-weight: 500;
+        line-height: 1em;
+
     }
 
     .jumbotron .chevron {
-        bottom: 8px;
+        bottom: 2px;
     }
 
     .jumbotron .chevron i{
@@ -303,7 +310,7 @@ p {
     padding-top: 20px;
 }
 
-.tab-pane ul li {
+.tab-pane h2 {
     padding-bottom: 1em;
 }
 
