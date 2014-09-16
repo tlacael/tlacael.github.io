@@ -24,7 +24,9 @@ h1 {
     padding-bottom: 20px;
 }
 
-
+p {
+    font-size: 16px;
+}
 
 /* Navbar Stuff
 * --------------------------------------- */
@@ -83,7 +85,8 @@ h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center 50px;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    background:-webkit-gradient(radial, 190 76, 0, 244 -73, 465, from(#000000),  to(#000000)) */
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -98,29 +101,48 @@ h1 {
 .jumbo {
     /* absolute center .splash within .splash-container */
     width: 80%;
-    height: 60%;
+    height: 50%;
     margin: auto;
     position: absolute;
-    top: 75px; left: 0; bottom: 0; right: 0;
+    top: 50px; left: 0; bottom: 0; right: 0;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: none;
     color:white;
 }
 
 
-/* This is the main heading text styling */
+/* This is the main heading text styling
 .jumbo-head {
     color: white;
     border: 2px solid white;
     padding: .5em 1.6em;
     border-radius: 5px;
     line-height: 1em;
+    background-image: url(/img/sp_logo_just_text.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+/* This is the main heading text styling */
+.jumbo-head {
+    width:100%;
+    color: white;
+    border: 2px solid white;
+    border-spacing: 0px;
+    padding: .5em 1.6em;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.jumbo-head img{
+    width: 100%;
+    height: auto;
 }
 
 /* This is the subheading text styling */
 .jumbo-subhead{
     color: white;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 0.05em;
 }
 
@@ -140,8 +162,8 @@ h1 {
 @media (min-width: 768px) {
      .jumbo{
         width: 80%;
-        height: 50%;
-        top: 100px; left: 0; bottom: 0; right: 0;
+        height: 60%;
+        top: 0px; left: 0; bottom: 0; right: 0;
      }
 
     .jumbo-head{
@@ -281,6 +303,10 @@ h1 {
     padding-top: 20px;
 }
 
+.tab-pane ul li {
+    padding-bottom: 1em;
+}
+
 
 /* Style for the team section
 * --------------------------------------- */
@@ -288,6 +314,14 @@ h1 {
     background-color: #0582D8;
     backgroud-size: cover;
     color:white;
+}
+
+#team-ribbon p{
+    line-height: 1.25em;
+}
+
+#team-ribbon .col-md-6{
+    padding-top: 0px;
 }
 
 #team-ribbon img{
@@ -322,7 +356,7 @@ h1 {
     font-size: large;
     padding: 15px;
     border-color: #2d6ca2;
-    border: 3px solid #2d6ca2;
+    border: 2px solid #2d6ca2;
     padding: 1em 1.6em;
     border-radius: 5px;
     line-height: 1em;
@@ -335,14 +369,14 @@ h1 {
 
 
 #mc_embed_signup #mc-embedded-subscribe{
-    background-image: -webkit-linear-gradient(top, #0582D8 0%, #2d6ca2 100%);
-    background-image:         linear-gradient(to bottom, #0582D8 0%, #2d6ca2 100%);
+    background-image: -webkit-linear-gradient(top, #0582D8 50%, #2d6ca2 100%);
+    background-image:         linear-gradient(to bottom, #0582D8 50%, #2d6ca2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
     border-color: #2b669a;
     height: 1.75em;
-    width: 4em;
+    width: 5em;
 }
 
 #mc_embed_signup #mc-embedded-subscribe:hover,
@@ -364,12 +398,11 @@ h1 {
 
 /* Bottom footer style
 * --------------------------------------- */   
-footer{
+footer p{
     color: darkgrey;
-    font-size: .75em;
+    font-size:12px;
     text-align: center;
     vertical-align: middle;
-    bottom: 15px;
     width: 100%;
 }
 
