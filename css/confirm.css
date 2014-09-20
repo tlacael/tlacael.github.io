@@ -1,0 +1,107 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 50px;
+  }
+
+h1 {
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Navbar Stuff
+* --------------------------------------- */
+.navbar-brand img{
+    max-width:120px;
+    margin-top: -7px;
+}
+
+/* Undo stubborn theme option */
+.navbar-inverse .navbar-nav > .active > a {
+    background-image: none;
+    box-shadow: none;
+}
+
+.navbar-inverse { background-color: #0582D8}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #48A1DE}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #0463A5}
+.dropdown-menu { background-color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428BCA}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #0463A5}
+.navbar-inverse .navbar-brand { color: #FFFFFF}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #000000}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+
+/* Toggle */
+.navbar .navbar-toggle { border-color: white; }
+.navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus { background-color: #48A1DE}
+.navbar .navbar-toggle .icon-bar {background-color: white}
+.navbar .navbar-toggle .border { color:white }
+
+
+
+/* Jumbotron styles
+*---------------------------------------*/
+
+.jumbotron{
+    margin-top: 50px;
+}
+
+/* medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+
+/* For small devices (iPhone) in landscape */
+@media (max-height:400px){
+
+
+
+}
+
+.wrapper{
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* Bottom footer style
+* --------------------------------------- */
+footer p{
+    color: darkgrey;
+    font-size:12px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
