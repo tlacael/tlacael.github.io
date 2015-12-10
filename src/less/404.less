@@ -1,0 +1,99 @@
+// main: styles.less
+// out: null
+
+html, input, #goog-wm .search-goog, li {
+    font-family: apercumono;
+}
+
+
+#fourohfour {
+    //  padding: 30px 20px 50px;
+    //margin: 0 auto;
+
+
+    h1 {
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .container {    
+        margin: 0 auto;
+    }
+
+    img{
+        height: 110px;
+        width: auto;
+    }
+
+    #goog-wm h3.other-things{
+        display: none;   
+    }
+
+
+    /* google search */
+
+    #goog-fixurl ul {
+        font-size: 1em;
+        list-style: none;
+        //padding: 0px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    #goog-fixurl form {
+        //margin: 0;
+        .make-row();
+    }
+
+
+    //input
+    #goog-wm-qt {
+        //  display: inline-block;
+        width: 100%;
+        height: 50px;
+        //padding: 0px;
+        margin-top: 5px;
+        margin-right: 5px;
+        clear: both;
+        background-color: @primary;
+        border: none;
+        border-radius: 0px;
+        color: white;
+        .placeholder(white);
+
+        .make-xs-column(6);
+
+    }
+
+
+    //Button
+    #goog-wm-sb {
+        background-color: white;
+        border: 1px solid @primary;
+        color: @primary;
+        cursor: pointer;
+        display: inline-block;
+        height: 50px;
+        padding: 0px;
+        margin-top: 5px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        white-space: nowrap;
+        width: 100%;
+
+        .make-xs-column(5);
+    }
+
+    //button hover
+    #goog-wm-sb:hover, #goog-wm-sb:focus {
+        border: none;
+        color: white;
+        background-color: @accent-color;
+    }
+}
+
+
+
+
+

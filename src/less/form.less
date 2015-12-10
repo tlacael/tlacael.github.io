@@ -1,0 +1,163 @@
+// main: styles.less
+// out: null
+
+//input spacing
+.form-horizontal{
+    .form-group{
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+//adjust input padding
+input[id^="mce-"]{
+    @media (min-width: @screen-xs) {
+        padding: 6px 27px;
+    }
+}
+
+
+#email-cols{
+     @media (min-width: @screen-xs) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+//First name grid
+#sp-first-cols{
+    .make-xs-column(6);
+
+    @media (min-width: @screen-xs) {
+        .make-xs-column(4);
+        .make-xs-column-offset(1);
+        padding-left: 0px;
+    }
+
+    @media (min-width: @screen-sm) {
+        .make-sm-column(3);
+        .make-sm-column-offset(2);
+        padding-left: 0px;
+    }
+}
+
+//Last name field grid
+#sp-last-cols {
+    .make-xs-column(6);
+
+    @media (min-width: @screen-xs) {
+        .make-xs-column(6);
+        padding-right: 0px;
+    }
+
+    @media (min-width: @screen-sm) {
+        .make-sm-column(5);
+        padding-right: 0px;
+    }
+}
+
+
+
+form {
+    display:block;
+    position:relative;
+    font-family: apercumono;
+    //font-size: 1em;
+    text-align:left;
+    padding-bottom:20px;
+
+
+    .row{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    .form-group {
+        .form-control{
+            clear: both;
+            background-color: @primary;
+            border: none;
+            border-radius: 0px;
+            color: white;
+            .placeholder(white);
+            height: 50px;
+            border: 0px;
+            box-shadow: none;
+            padding: 6px 27px; //word padding
+        }
+
+
+/* This removes the placeholder text when the use clicks the field */
+        input:focus::-webkit-input-placeholder { color:@primary; }
+        input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+        input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+        input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+    }
+
+    .button {
+        clear:both;
+    }
+}
+
+
+.clear {
+    clear:both;
+}
+
+
+//Button grid
+div[id="form-btn-cols"] {
+    .make-xs-column(4);
+    .make-xs-column-offset(8);
+
+    @media (min-width: @screen-xs) {
+        .make-xs-column(3);
+        .make-xs-column-offset(8);
+    }
+
+    @media (min-width: @screen-sm) {
+        .make-sm-column(2);
+        .make-sm-column-offset(8);
+    }
+}
+
+
+.sp-btn{
+    background-color: white;
+    border: 1px solid @primary;
+    border-radius:0px;
+    color: @primary;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    //padding-top: 15px;
+   // margin: 0;
+    height: 50px;
+   // vertical-align: middle;
+    .transition(.2s);
+}
+
+.sp-btn:hover, .sp-btn:focus{
+    border: none;
+    color: white;
+    background-color: @accent-color;
+}
+
+div[id="form-btn"]{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 5px;
+
+    @media (min-width: @screen-xs) {
+     //   padding-right: 6px;
+        margin-right: -25px;
+    }
+}
+

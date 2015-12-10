@@ -1,0 +1,79 @@
+// main: styles.less
+// out: null
+
+//TODO
+// position modal; connect to form; adjust width to row div
+
+.modal{
+
+    .modal-dialog {
+
+    }
+    .modal-content {
+        background-color: @section-bg;
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+
+
+    }
+    .modal-backdrop{
+    }
+
+    .modal-header{
+        border-bottom: 0px;   
+        .modal-title {text-align: left};
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        @media (min-width: @screen-xs) {
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .modal-body{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+         @media (min-width: @screen-xs) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    .modal-footer{
+        border-top: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+
+         @media (min-width: @screen-xs) {
+            padding-left: 50px;
+            padding-right: 50px;
+             padding-bottom: 50px;
+        }
+    }
+    .btn {
+        font-family: apercumono;
+        background-color: white;
+        border: 1px solid @primary;
+        border-radius:0px;
+        color: @primary;
+        cursor: pointer;
+        font-size:15px;
+        height: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        white-space: nowrap;
+        width: auto;
+    }
+}

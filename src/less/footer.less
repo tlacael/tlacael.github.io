@@ -1,0 +1,192 @@
+// main: styles.less
+// out: null
+
+//remove padding from inner container
+div[id="footer-container"]{
+    padding: 0px;
+}
+
+
+.footer{
+    background: @primary;
+    padding: 20px, 20px;
+    padding-right: 20px;
+
+    p{ color: white; }
+
+    a{
+        font-size: .75em;
+        color: @primary;
+        margin-top: 20px;
+        :hover{
+            color: @accent-color;
+            .transition(.2s);
+        }
+    }
+
+    // This stuff relies on logo-size
+        @logo-size: 115px;
+        @footer-padding: 20px;
+
+    @media (min-width: @screen-sm) {
+        height: @logo-size + @footer-padding * 2;
+    }
+
+
+    #footer_logo{
+        .make-xs-column(6);
+        text-align:right;
+        img {
+            margin:0px;
+            pading:0px;
+            max-height: @logo-size;
+        }
+
+        @media (min-width: @screen-sm) {
+            .make-sm-column(2);
+            position: absolute;
+            left: 15px;
+            bottom: @footer-padding;
+  //          margin-left: -10px;
+//            padding-left: 0px;
+            text-align: left;
+        }
+
+        @media (min-width: @screen-md) {
+            left: 30px;
+        }
+
+        @media (min-width: @screen-lg) {
+
+        }
+    }
+
+    #footer_address{
+        .make-xs-column(6);
+        p{
+            font-size:8pt;
+            line-height: 12pt;
+        }
+
+        h2 {
+            font-size: 12pt;
+            margin-bottom: 3px;
+            margin-top: 10px;
+            color: white;
+            letter-spacing: 0pt;
+        }
+
+        @media (min-width: @screen-sm) {
+            .make-sm-column(4);
+            height: @logo-size;
+            position: absolute;
+            left: @logo-size + @footer-padding + 10px;
+            bottom: @footer-padding;
+
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            p{padding-bottom: 0px; margin-bottom: 0px;}
+            h2{
+                padding-top: @footer-padding;
+                margin-top: 0px;
+            }
+        }
+
+        @media (min-width: @screen-md) {
+            left: @logo-size + @footer-padding + 40px;
+        }
+    }
+
+    div[id=footer_social]{
+        .make-xs-column(12);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14pt;
+        text-align: center;
+
+        .fa-stack {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @media (min-width: @screen-xs) {
+            .fa-stack {
+                padding-left: 30px;
+                padding-right: 30px;
+                font-size: 20px;
+            }
+        }
+        @media (min-width: @screen-sm) {
+            .make-sm-column(6);
+            height: @logo-size;
+            position: absolute;
+            bottom: @footer-padding;
+            right: 15px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            text-align: right;
+            .fa-stack {
+                font-size: 30px;
+                margin-top: 25px;
+            }
+        }
+
+        @media (min-width: @screen-md) {
+            right: 20px;
+            .fa-stack {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+
+    }
+
+    #footer_rights{
+        .make-xs-column(12);
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        p{
+            text-align: center;
+            vertical-align: bottom;
+            font-size: 6pt;
+            line-height: 10pt;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        a[id="todd"]{
+            font-size: 6pt;
+            color: white;
+            text-decoration: underline;
+        }
+
+        a[id="todd"]:hover {
+            color: @accent-color;
+        }
+
+        @media (min-width: @screen-sm) {
+            .make-sm-column(6);
+            .make-sm-column-offset(6);
+            position: absolute;
+            bottom: 5px;
+            right: 15px;
+
+            p{
+                text-align: right;
+                font-size: 7pt;
+                line-height: 12pt;
+            }
+
+            a[id="todd"]{font-size: 7pt;}
+        }
+
+        @media (min-width: @screen-md) {
+            right: 30px;
+        }
+    }
+}

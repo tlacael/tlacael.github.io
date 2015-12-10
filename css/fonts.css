@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'apercumono';
+    src: url(http://static.tumblr.com/ytemnsq/R3cng2uun/apercu-mono-webfont.eot);
+    src: local('☺'), url(http://static.tumblr.com/ytemnsq/5urng2uvp/apercu-mono-webfont.woff) format('woff'), url(http://static.tumblr.com/ytemnsq/55kng2uv9/apercu-mono-webfont.ttf) format('truetype'), url(http://static.tumblr.com/ytemnsq/LSrng2uu1/apercu-mono-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'ITCAvantGardePro-Bold';
+	src: url(http://static.tumblr.com/ytemnsq/ewwng2s23/itcavantgardepro-bold.eot);
+	src: local('☺'), url(http://static.tumblr.com/ytemnsq/mINng2s2y/itcavantgardepro-bold.woff) format('woff'), url(http://static.tumblr.com/ytemnsq/9gtng2s4b/itcavantgardepro-bold.ttf) format('truetype'), url(http://static.tumblr.com/ytemnsq/LE8ng2s4t/itcavantgardepro-bold.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+

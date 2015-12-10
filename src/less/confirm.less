@@ -1,0 +1,39 @@
+// main: styles.less
+// out: null
+
+
+body[id="confirm-page"]{
+    background-color: @section-bg;
+    margin-top: 30px;
+
+    a{ font-family: apercumono; }
+
+    .btn{ padding-top: 15px; }
+
+
+    img{
+        height: 110px;
+        width: auto;
+    }
+
+    div[id="confirm-btn"] {
+        .make-xs-column(6);
+        .make-xs-column-offset(6);
+
+        @media (min-width: @screen-xs) {
+            .make-xs-column(4);
+            .make-xs-column-offset(6);
+        }
+
+        @media (min-width: @screen-sm) {
+            .make-sm-column(4);
+            .make-sm-column-offset(6);
+        }
+
+        @media (min-width: @screen-md) {
+            .make-sm-column(3);
+            .make-sm-column-offset(7);
+        }
+    }
+
+}

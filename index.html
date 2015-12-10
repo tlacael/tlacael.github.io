@@ -2,271 +2,390 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Sensory Percussion</title>
-        <meta name="description" content="A next-generation electronic drum that captures the true expressive nature of drumming.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="A next-generation electronic drum that captures the true expressive nature of drumming.">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <meta property="og:site_name"   	content="Sunhouse" />
+    <meta property="og:description"   	content="Bridging the digital divide between acoustic instruments and electronic sound." />
+    <meta property="og:title"  			content="Sunhouse" />
+    <meta property="og:type"   			content="website" />
+    <meta property="og:url"    			content="http://sunhou.se" />
+    <meta property="og:image"  		content="http://sunhou.se/img/sunhouse_hero_og.jpg" />
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-          <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/font-awesome-animation.min.css">
-    </head>
+    <meta name="twitter:card" 			content="summary_large_image">
+    <meta name="twitter:url" 			content="http://sunhou.se">
+    <meta name="twitter:title" 			content="Sunhouse">
+    <meta name="twitter:description" 	content="Bridging the digital divide between acoustic instruments and electronic sound.">
+    <meta name="twitter:image" 			content="http://sunhou.se/img/sunhouse_hero_tw.jpg">
+    <link rel="canonical"   href="http://sunhou.se" />
 
-    <body data-spy="scroll" data-target=".navbar-collapse">
-        <div class="inner-body">
+    <title>Sunhouse</title>
+
+    <!-- Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <!-- Favicon and various icon code -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta name="apple-mobile-web-app-title" content="Sunhouse">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <!-- End favicon code -->
+
+
+    <!-- This script checks for svg compatibility and swaps to png when necessary -->
+    <script>
+        if(!Modernizr.svg) {
+            $('img[src*="svg"]').attr('src', function() {
+                return $(this).attr('src').replace('.svg', '.png');
+            });
+        }
+    </script>
+
+    <!-- for kickstarter button hover -->
+    <script>
+        function onHover()
+        {
+            $("#ks-btn").attr('src', 'img/preorder-btn-hover.svg');
+        }
+
+        function offHover()
+        {
+            $("#ks-btn").attr('src', 'img/preorder-btn.svg');
+        }
+    </script> <!-- /hover -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NZWC6H"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,'script','dataLayer','GTM-NZWC6H');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-fixed-top navbar-default transparent">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="hamburger">  
+                <ul class="nav  navbar-right nav-pils nav-stacked text-right">
+                    <li><a class="h4" href="#">home</a></li>
+                    <li><a class="h4" href="/sensorypercussion.html">technology</a></li>
+                    <li><a class="h4" href="http://preorder.sunhou.se">pre-order</a></li>
+                    <li><a class="h4" href="http://blog.sunhou.se">blog</a></li>
+                    <li><a class="h4" href="/jobs.html">jobs</a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>  
+    <!-- end navigation -->
+
+
+    <div class="inner-body">
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        
-        
-  <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="/img/sp_logo_just_text.png" /></a>
-        </div>
-        <!-- Collect the nav links for toggling -->
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#about">About</a></li>
-              <li><a href="#news">News</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
- 
-        </div><!--/.nav-collapse -->
-      </div>
-    </div> <!--end navbar-->
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-        
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" id="suki">
-      <div class="container jumbo">
-        <h1 class="jumbo-head"><img src="img/sp_logo_just_text.png"></h1>
-        <p class="jumbo-subhead">Bringing powerful technologies to creative musicians.</p>
-       <!-- <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p> -->
 
-      </div>  <!-- /container --> 
-        <div class="chevron">
-        <i class="fa fa-chevron-down fa-3x faa-float animated"></i>
-        </div>
+        <div class="jumbotron sp-jumbo" id="cover">
+            <div id="logo">
+                <img id="hero" src="img/sp_by_sunhouse_logo_grey.svg" alt="Sensory Percussion by sunhouse">
 
-    </div> <!-- /jumbotron-->
+                <div class="chevron">
+                    <i class="fa fa-chevron-down fa-5x faa-float animated"></i>
+                </div> <!-- ./chevron -->
+            </div>  <!-- ./logo -->
+            <div id="kickstarter-btn">
+                <a href="https://www.kickstarter.com/projects/127149874/160255757?token=06178e9b"><img id="ks-btn" src="img/preorder-btn.svg" alt="Fund us on Kickstarter" onmouseover="onHover()" onmouseout="offHover()" /></a>
+            </div> <!--./kickstarter -->
+        </div> <!-- ./jumbotron-->
 
-        
+
         <div class="wrapper">
-        
-        <!-- About Section -->
-        <div class="container section" id="about">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>About</h1>
-            
-                    <p>Sensory Percussion is creating next-generation electronic drums that captures the true expressive nature of drumming. An overlay on your current acoustic drums, Sensory Percussion lets you map different parts of the drum to any sound desired–from samples and synthesizers to digital audio effects. Sounds follow your playing in real-time–so rather than twiddle knobs and push buttons you can have nuanced control by simply playing the drums.</p>
-                </div> <!-- /col -->
-            </div>  <!-- /row -->
+            <div class="container"> <!-- content container -->
 
+                <div class="row" id="about">
+                    <div class="sp-cols">
+                        <h1 id="about-h1">Introducing Sensory&nbsp;Percussion.</h1>
+                        <p>Sensory Percussion is a modern take on electronic drums that captures the true expressive nature of drumming. While triggers turn your drum into little more than an on/off button, Sensory Percussion listens and reacts, responding to the essence of your performance.</p>
+                        <p>The Sensory Percussion system is an overlay onto acoustic drums. It’s a hardware sensor that clamps to the side of a drum (snare, tom or kick) and connects to our Mac/PC software via a standard audio interface as a phantom-powered microphone.</p>
+                        <p>Sensory Percussion understands where and how you hit the drum. It not only lets you map different parts of the drum to any sound desired (from samples and synthesizers to digital audio effects), it also lets you control those sounds in an intuitive, expressive way.</p>
+                        <p>The result is a new instrument that let’s you create with electronics in a way never before possible: with the drumsticks and drums you already own and love.</p>
+                    </div> <!-- ./col -->
+                </div> <!-- ./row -->
 
-            <div class="row">
-                <div class="video-wrapper">
-                    <div class="col-md-12 video-container">
-                        <iframe id="ytplayer" type="text/html"
-src="https://www.youtube.com/embed/mk5bsFPz-nQ?fs=1&modestbranding=1&rel=0&showinfo=0&autohide=1&theme=light"
-                            frameborder="0" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
+                <div class="row" id="video">
+                    <div class="sp-cols">
+                        <div class="row vcenter">
+                            <div class="col-xs-4">
+                                <a href="https://www.kickstarter.com/projects/sunhouse/introducing-sensory-percussion/description"><img class="img-responsive" src="img/kickstarter-badge-funded.png"></a>
+                            </div>
 
-            </div> <!-- /row -->
-            
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-left"><i class="fa fa-ban"></i>&nbsp; More than just triggers</h2>
-
-                    <p>Sensory Percussion understands <i>where</i> and <i>how</i> you are hitting the drum and  follows your playing in a truly natural way. While triggers turn your drum into just a switch for a single sample and are not sensitive enough to capture intricate playing, Sensory Percussion listens to the sound of your drum to capture the essense of your performance beyond just timing and volume.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-left"><i class="fa fa-flash"></i>&nbsp; Designed for the stage</h2>
-                    
-                    <p>Sensory Percussion was built for live performance. It has low latency and a user interface designed for the stage. Our proprietary drum sensors capture the sound of your drum while isolating it from ambient noise, making it possible to play in loud environments. Sensory Percussion will allow you to extend your drums with great sounding pre-recorded and mastered drum sounds, but also to experiment with whatever sounds you want, opening the door to a new era of performance and composition for instrumentalists. </p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-left"><i class="fa fa-microphone"></i>&nbsp; Record drums without a big studio</h2>
-
-                    <p>Recording drums is hard. You need thousands of dollars of microphones and recording equipment. And if you want a big sound, you need a big expensive live room. Drum replacement software can turn your drums into trigger tracks for using samples. But by capturing only timing and velocity, these solutions are like bad photo copies of a color photograph. Sensory Percussion is in full color, allowing you to capture the essense of your performance in a visually intuitive format - decades beyond MIDI. </p>
-                    <p>You can record studio-quality drum tracks anywhere (bedrooms and garages work great) and have unlimited control of sounds in post production. </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-left"><i class="fa fa-flask"></i>&nbsp; Bringing the latest academic research to music creation</h2>
-
-                    <p>Sensory Percussion's aim is to bring back the physicality of music creation from the realm of button controllers, click-tracks and procedural interfaces. We want to shift the music industry away from a mechanized and rigid recording and performance practice, back to an expressive and more human way of making music. Our first effort is with drumming, but our vision extends to other instruments and music creation software in general. We're working to reverse the trend of musicians listening to machines and create smarter systems capable of listening to and following musicians, pushing the musical instrument forward into the 21st century.</p>
-                </div>
-
-
-            </div> <!-- /row -->
-        </div> <!-- /AboutContainer -->
-        
-        <div class="container section" id="news">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>News</h1>
-
-                    <p>September 21, 2014</p>
-                    <h2>Sensory Percussion is a 2014 NYC Next Top Maker Fellow!</h2>
-                    <br>
-                    <a href="https://www.nexttopmakers.com"><img  src="img/Top-Makers-Logo.png" class="img-responsive" alt="NYC Next Top Makers logo"></a>
-                    <br>
-                    <p> We're one of six companies admitted to the Studio Incubation Program and will get 12 months of  customized support. Read the <a href="http://www.nycedc.com/press-release/nycedc-announces-new-yorks-2014-next-top-makers">press release</a> and see the other <a href="https://www.nexttopmakers.com/fellows">five fellows</a>.</p>
-                </div>
-            </div>
-        </div>
-
+                            <div class="col-xs-8" id="ksinfo">
+                                <h3 class="text-center">328 backers contributed $94,245.</h3> <a href="https://www.kickstarter.com/projects/sunhouse/introducing-sensory-percussion/description"><h4 class="text-center">Check out our campaign!</h4></a>
+                            </div>
 
         
-        <!-- Team Section -->
-        <div class="ribbon section" id="team-ribbon">
-            <div class="container" id="team">
-                <div class="row  row-centered">
-                    <div class="col-md-12">
-                        <h1>Team</h1>
-                        <div class="col-md-6 col-centered">
-                            <img src="/img/tlacael_web.png" alt="A photo of Tlacael Esparza" class="img-thumbnail">
-                            <h2>Tlacael Esparza</h2>
-                            <p>Co-Founder and CEO<br>(Technology &amp; Product)&nbsp;
-                            <a href="https://twitter.com/tlacael"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/pub/tlacael-esparza/82/233/815"><i class="fa fa-linkedin"></i></a>
+                        </div> <!-- ./row -->
+                    </div> <!-- ./cols -->
+                </div> <!-- ./row -->
+
+
+                <div class="row" id="video">
+                    <div class="sp-cols">
+                        <p>Watch our video:</p>
+                        <!--
+<div class="embed-responsive embed-responsive-4by3">
+<iframe width="640" height="480" src="https://www.youtube.com/watch?v=S-ZjyOigJnY" frameborder="0" scrolling="no"> </iframe>
+</div> -->
+
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/S-ZjyOigJnY?rel=0&amp;showinfo=0"></iframe>
+                        </div>
+
+
+                    </div> <!-- ./cols -->
+                </div><!-- ./row -->
+
+                <div class="row">
+                    <div class="sp-cols">
+                        <p>Sign up for our newsletter:</p>
+                    </div> <!--./ col -->
+                </div> <!-- ./row -->
+
+
+                <!-- Begin MailChimp Signup Form -->
+
+                <form action="//sunhou.us9.list-manage.com/subscribe/post?u=91f136f69a32fb84fcfa4604a&amp;id=48cd12ee9d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" role="form" target="_blank" novalidate>
+                    <div class="row">
+                        <div class="sp-cols" id="email-cols">
+                            <div class="form-group">
+                                <label class="sr-only" for="mce-EMAIL">Email address</label>
+                                <input type="email" value="" name="EMAIL" class="required email form-control input-group-lg" id="mce-EMAIL" placeholder="Email address.">
+                            </div> <!-- ./form-group -->
+                        </div> <!-- ./col -->
+                    </div> <!-- ./row -->
+                    <div class="row">
+                        <div id="sp-first-cols">
+                            <div class="form-group">
+                                <label class="sr-only" for="mce-FNAME">First Name</label>
+                                <input type="text" value="" name="FNAME" class="form-control input-group-lg" id="mce-FNAME" placeholder="First name.">
+                            </div> <!-- ./form-group -->
+                        </div> <!-- ./col -->
+
+                        <div id="sp-last-cols">
+                            <div class="form-group">
+                                <label class="sr-only" for="mce-LNAME">Last Name</label>
+                                <input type="text" value="" name="LNAME" class="form-control input-group-lg" id="mce-LNAME" placeholder="Last name.">
+                            </div> <!-- ./form-group -->
+                        </div> <!-- ./col -->
+                    </div> <!-- ./row -->
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_91f136f69a32fb84fcfa4604a_48cd12ee9d" tabindex="-1" value=""></div>
+                    <div class="clear row">
+                        <div id="form-btn-cols" >
+                            <div id="form-btn">
+                                <input type="submit" value="Send!" name="subscribe" id="mc-embedded-subscribe" class="button btn-block btn sp-btn" data-toggle="modal">
+                            </div>
+                        </div> <!-- ./col -->
+                    </div> <!-- ./row -->
+                </form>
+                <!--End mc_embed_signup-->
+
+                <div class="row" id="follow-us">
+                    <div class="sp-cols">
+                        <p>Follow us:</p>
+                    </div> <!-- ./col -->
+                </div>
+                <div class="row text-center" id="follow">
+
+                    <a href="https://twitter.com/SunhouseInc">
+                        <span class="fa-stack fa-lg social-box">
+                            <i class="fa fa-circle fa-stack-2x social-outer"></i>
+                            <i class="fa fa-twitter fa-stack-1x social-inner"></i>
+                        </span>
+                    </a>
+
+                    <a href="https://www.facebook.com/SunhouseInc">
+                        <span class="fa-stack fa-lg social-box">
+                            <i class="fa fa-circle fa-stack-2x social-outer"></i>
+                            <i class="fa fa-facebook fa-stack-1x social-inner"></i>
+                        </span>
+                    </a>
+
+                    <a href="http://instagram.com/sunhouseinc">
+                        <span class="fa-stack fa-lg social-box">
+                            <i class="fa fa-circle fa-stack-2x social-outer"></i>
+                            <i class="fa fa-instagram fa-stack-1x social-inner"></i>
+                        </span>
+                    </a>
+
+                    <a href="http://blog.sunhou.se">
+                        <span class="fa-stack fa-lg social-box">
+                            <i class="fa fa-circle fa-stack-2x social-outer"></i>
+                            <i class="fa fa-tumblr fa-stack-1x social-inner"></i>
+                        </span>
+                    </a>
+
+                    <a href="https://www.youtube.com/c/sunhouseinc">
+                        <span class="fa-stack fa-lg social-box">
+                            <i class="fa fa-circle fa-stack-2x social-outer"></i>
+                            <i class="fa fa-youtube-play fa-stack-1x social-inner"></i>
+                        </span>
+                    </a>
+                </div> <!-- ./row -->
+
+                <div class="row">
+                    <div class="sp-cols">
+                        <a href="http://blog.sunhou.se"><h1>Read the blog.</h1></a>
+                        <!-- <a href="http://sunou.se/jobs"><h1>Work with us.</h1></a> -->
+                        <a href="mailto:contact@sunhou.se"><h1>Contact us.</h1></a>
+                    </div> <!-- ./col -->
+                </div> <!-- ./row -->
+
+                <div class="row" id="welcome">
+                    <div class="sp-cols">
+                        <h1>Who we are.</h1>
+                        <p>Sunhouse is a new kind of music tech company: our instruments are made for musicians, by musicians. Using the latest advances in sensor and signal technology, our products reinvigorate live performance and expand the sonic possibilities of music making.</p>
+                        <p>Our operation is based in New York City and all of our technology is designed and manufactured in the US.</p>
+
+                    </div> <!-- ./col -->
+                </div> <!-- ./row -->
+
+            </div> <!-- ./content container -->
+
+            <div class="container-fluid"> 
+                <div class="row footer">
+                    <div class="container" id="footer-container">
+                        <div id="footer_logo">
+                            <img src="img/sunhouse_logo_white.svg" alt="Sunhouse logo">
+                        </div>
+                        <div id="footer_address">
+                            <h2>sunhouse</h2>
+                            <p>45-50 30th Street<br>
+                                Studio 40<br>
+                                Long Island City, NY 11101<br>
+                                T: +1 917 740 4087<br>
+                                E: contact@sunhou.se</p>
+                        </div>
+                        <div id="footer_social">
+                            <a href="https://twitter.com/SunhouseInc">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                    <i class="fa fa-twitter fa-stack-1x sp-icon"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.facebook.com/SunhouseInc">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                    <i class="fa fa-facebook fa-stack-1x sp-icon"></i>
+                                </span>
+                            </a>
+                            <a href="http://instagram.com/sunhouseinc">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                    <i class="fa fa-instagram fa-stack-1x sp-icon"></i>
+                                </span>
+                            </a>
+
+                            <a href="http://blog.sunhou.se">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                    <i class="fa fa-tumblr fa-stack-1x sp-icon"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/c/sunhouseinc">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                                    <i class="fa fa-youtube-play fa-stack-1x sp-icon"></i>
+                                </span>
+                            </a>
+
+
+                        </div> <!-- ./social -->
+
+                        <div id="footer_rights">
+                            <p>Design by <a id="todd" href="http://www.toddiangoldstein.com">Todd Goldstein</a>.<br>
+                                &copy; 2015 Sunhouse Technologies, Inc. All Right Reserved.
                             </p>
-                        </div> <!-- /col-6 -->
+                        </div> <!-- ./rights -->
 
-                        <div class="col-md-6 col-centered">
-                            <img src="/img/tenoch_web.png" alt="A photo of Tenoch Esparza" class="img-thumbnail">
-                            <h2>Tenoch Esparza</h2>
-                            <p>Co-founder and COO<br>(Business &amp; Marketing)&nbsp;
-                            <a href="https://twitter.com/tenoche"><i class="fa fa-twitter"></i></a>
-                            <a href="www.linkedin.com/in/tenochesparza/"><i class="fa fa-linkedin"></i></a>
-                            </p>
-                        </div> <!-- /col-6 -->
-                    </div> <!-- /col-12 -->
-                </div> <!-- /row -->
-            </div> <!-- /TeamContainer -->
-        </div>
+                    </div> <!-- ./container -->
+                </div> <!-- ./row -->
+            </div> <!-- ./container-fluid -->
 
-        <!-- Contact Section -->
-        <div class="container section" id="contact">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Contact</h1>
-                    <h2>Sign up to learn more.</h2>
-                    <h3>Reach us at <a href="mailto:contact@sensorypercussion.com">contact@sensorypercussion.com</a>.</h3>
-                 </div> <!-- /col-12 -->
-            </div> <!-- ./row -->
-
-
-<!-- Begin MailChimp Signup Form Embed-->
-                <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-                <div id="mc_embed_signup">
-                    <form action="//sensorypercussion.us9.list-manage.com/subscribe/post?u=91f136f69a32fb84fcfa4604a&amp;id=5e23309844" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                        </div>
-                        <div class="mc-field-group size1of2">
-                            <label for="mce-FNAME">First Name </label>
-                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                        </div>
-                        <div class="mc-field-group size1of2">
-                            <label for="mce-LNAME">Last Name </label>
-                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_91f136f69a32fb84fcfa4604a_5e23309844" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                    </form>
-                </div>
-
-<!--End mc_embed_signup-->
+        </div><!-- ./wrapper -->
 
 
 
 
-            <div class="row media-button">
-                <h2>Follow us.</h2>
-                <div class="col-md-12">
-                <a href="https://twitter.com/SensoryPercssn"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.facebook.com/sensorypercussion"><i class="fa fa-facebook"></i></a>
-                <a href="http://instagram.com/sensorypercussion"><i class="fa fa-instagram"></i></a>
-                <a href="http://sensorypercussion.tumblr.com"><i class="fa fa-tumblr-square"></i></a>
-                <a href="http://www.youtube.com/user/sensorypercussion"><i class="fa fa-youtube-square"></i></a>
 
-                    </div> <!-- /col-12 -->
-                </div> <!-- /row -->
-        </div> <!-- /contactContainer -->
-
-
-      <footer>
-        <hr>
-        <p>&copy; 2014 Sensory Percussion, Inc. All Right Reserved.</p>
-      </footer>
-     
-        </div> <!-- /wrapper -->
-
-        
-        
-<!-- JavaScript Libraries -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
-
-
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/vendor/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-            <script>
-                $("#suki").backstretch("/img/suki_on_drum.jpg"), {centeredY:false, centeredX:false};
+        <script src="js/vendor/magnific-popup.js"></script>
+        <script>
+            $("#cover").backstretch("img/sp_render_hero_grad.png"), {centeredY:false, centeredX:false};
+        </script>
 
-
-
-            </script>
-
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
-
-        <!-- Google Analytics-->
-            <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-                ga('create', 'UA-51485137-2', 'auto');
-                ga('send', 'pageview');
-            </script>
-        </div> <!--/inner-body-->
-    </body>
+            ga('create', 'UA-57614991-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </div> <!--/inner-body-->
+</body>
 </html>

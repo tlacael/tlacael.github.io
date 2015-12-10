@@ -1,0 +1,507 @@
+// main: styles.less
+// out: null
+
+
+
+
+/* Font sizes */
+
+
+
+html body {
+
+    p{
+        font-family: "apercumono"!important;
+        line-height: 20pt;
+        font-size: 12pt;
+        text-align: left;
+        letter-spacing: -1px;
+
+        @media (min-width: @screen-xs) {}
+        @media (min-width: @screen-sm) {}
+    }
+
+    h1 {
+        font-family: "ITCAvantGardePro";
+        font-size: 22pt;
+        letter-spacing: -1pt;
+
+        @media (min-width: @screen-xs) {
+            font-size: 26pt;
+        }
+
+        @media (min-width: @screen-sm) {
+            font-size: 38pt;
+        }
+
+        @media (min-width: @screen-md) {
+            font-size: 42pt;
+        }
+    }
+
+    h2 {
+        font-family: "ITCAvantGardePro";
+        font-size: 22pt;
+        letter-spacing: -1pt;
+        @media (min-width: @screen-xs) {
+            font-size: 26pt;
+        }
+
+        @media (min-width: @screen-sm) {
+        }
+    }
+
+    /* Link style */
+
+    a{
+        text-decoration: underline;
+        color: @text-color;
+        .transition(.2s);
+    }
+}
+
+
+/* navbar */
+
+.navbar{
+    background:none;
+    border: 0;
+}
+
+.nav {
+    > li {
+        > a {
+            font-family: "ITCAvantGardePro";
+            padding: @nav-link-padding;
+            background-color: @accent-color;
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                background-color: @text-color;
+            }
+
+            /* For screens larger than mobile */
+            @media (min-width: @screen-sm) {
+                background-color:rgba(255,0,0,0)!important;
+            }
+        }
+    }
+}
+
+/* This is for the hamburger menu for mobile */
+// Normal
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+
+    &:hover {
+        background: transparent !important;
+    }
+
+    .icon-bar {
+        width: 22px;
+        transition: all 0.2s;
+    }
+    .top-bar {
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+    .middle-bar {
+        opacity: 0;
+    }
+    .bottom-bar {
+        -ms-transform: rotate(-45deg); /* IE 9 */
+        -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+}
+
+// Collapsed
+.navbar-toggle.collapsed {
+    .top-bar {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    .middle-bar {
+        opacity: 1;
+    }
+    .bottom-bar {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+}
+
+.navbar-collapse.collapse {
+    border-top: none!important;
+}
+
+
+//For centering an element in its parent row
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+/* Intro image parallax and style */
+.jumbotron{
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+/*
+.sp-jumbo {    
+z-index: 1;
+overflow: hidden;
+
+width: 100%;
+height: @cover-height;
+top: 0;
+left: 0;
+position: fixed !important;
+}
+
+*/
+
+// Adjust the logo size on mobile devices
+div[id=logo]{
+    width: 100%;
+    max-width: 800px;
+    height: 90%;
+    margin-left:25px; margin-top:25px;
+    position: absolute;
+    top: 10px; left: 20px; bottom: 0; right: 0;
+    //text-align: center;
+
+    img[id=hero]{
+        width: 50%;
+        height: auto;
+
+    }
+}
+
+
+div[id=kickstarter-btn]{
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+    bottom: 80px;
+
+    img{
+        width: 45%;
+        height:auto;
+        position: absolute;
+        bottom: 80px;
+    }
+}
+
+
+
+//this is for screens larger than mobile
+@media (min-width: @screen-xs) {
+    div[id=kickstarter-btn]{
+        //        width: 100%;
+        //        max-width: 500px;
+        //        height: 100%;
+        //        margin-right: 25px; margin-bottom:25px;
+        //        position: relative;
+        //        bottom: 50px; right: 10px; left:10px;
+        //        float: right;
+        width: 100%;
+        max-width: 500px;
+        height: 90%;
+        margin-right:25px; margin-bottom:25px;
+        position: absolute;
+        bottom: 70px; right: 20px;
+
+        img{
+            width: 60%;
+            height:auto;
+            max-height: 100px;
+            position: absolute;
+            bottom: 0px; right: 0px;
+        }
+    }
+}
+
+
+
+
+.jumbotron .chevron{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+    left: 0;
+    color: white;
+}
+
+/* This wrapper goes all the rest of the content */
+
+.wrapper {
+    padding: 0;
+    margin: 0;
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: @cover-height;
+    //min-height: 100% - @cover-height;
+    min-height: 1%;
+    width: 100%;
+    z-index: 2;
+    background: @section-bg;
+    overflow: hidden;
+}
+
+
+/* This wrapper goes all the rest of the content */
+
+.wrapper-other {
+    padding: 0;
+    margin: 0;
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    background: @section-bg;
+    overflow: hidden;
+}
+
+.container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Row Styles */
+.row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+
+div[id="follow"]{
+    padding-top: 0px;
+
+    a{ text-decoration: none; }
+
+    /* Social icons color*/
+    span.social-box i.social-outer{
+        color: @text-color;
+        .transition(.2s);
+    }
+
+    span.social-box i.social-inner{
+        color: white;
+        .transition(.2s);
+    }
+
+    /* social icons color on hover */
+    span.social-box:hover i.social-outer{
+        // border: none;
+        color: @accent-color;
+    }
+
+    span.social-box:hover i.social-inner{
+        color: white;
+    }
+
+    span.social-box{
+        font-size: 3em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    @media (min-width: @screen-xs) {
+        span.social-box{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    @media (min-width: @screen-sm) {
+        span.social-box{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    @media (min-width: @screen-md) {
+        span.social-box{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+
+    @media (min-width: @screen-lg) {
+        span.social-box{
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+    }
+
+}
+
+
+
+
+h1[id="about-h1"]{
+    margin-top: 5px;
+}
+
+
+div[id="video"]{
+    .embed-responsive{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+}
+
+
+/* This controls the grid for the various media queries*/
+.sp-cols{
+    .make-xs-column(12);
+
+    @media (min-width: @screen-xs) {
+        .make-xs-column(10);
+        .make-xs-column-offset(1);
+    }
+
+    @media (min-width: @screen-sm) {
+        .make-sm-column(8);
+        .make-sm-column-offset(2)
+    }
+
+    @media (min-width: @screen-md) {
+        .make-md-column(8);
+        .make-md-column-offset(2)
+    }
+}
+
+
+
+.wcid_left_text{
+    .make-xs-column(12);
+}
+
+
+/*This controls the columns for the What can it do? section */
+
+
+
+.wcid_left_text{
+    .make-xs-column(12);
+    @media (min-width: @screen-sm) {
+        .make-sm-column(8);
+    }
+}
+
+
+.wcid_right_vid{
+    .make-xs-column(12);
+    @media (min-width: @screen-sm) {
+        .make-sm-column(4);
+    }
+}
+
+
+
+.wcid_left_vid{
+    .make-xs-column(12);
+    @media (min-width: @screen-sm) {
+        .make-sm-column(4);
+        .make-sm-column-pull(8);
+    }
+}
+
+.wcid_right_text{
+    .make-xs-column(12);
+    @media (min-width: @screen-sm) {
+        .make-sm-column(8);
+        .make-sm-column-push(4);
+    }
+}
+
+.wcid_right_title{
+    .make-xs-column(12);
+    @media (min-width: @screen-sm) {
+        .make-sm-column(5);
+        .make-sm-column-offset(5);
+    }
+}
+
+
+.top-image{
+    padding: 0px;   
+}
+
+
+
+
+/* This controls the grid for the various media queries for extra pages... confirm, thanks, etc.*/
+.extra-page-cols{
+    .make-xs-column(12);
+
+    @media (min-width: @screen-xs) {
+        .make-xs-column(8);
+        .make-xs-column-offset(2);
+    }
+
+
+    @media (min-width: @screen-md) {
+        .make-md-column(8);
+        .make-md-column-offset(2);
+    }
+}
+
+
+
+.thumb a {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.thumb a .play,
+.thumb a .overlay {
+    opacity: 0;
+}
+
+.thumb a:hover .play,
+.thumb a:hover .overlay {
+    display: block;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.thumb a:hover .play {
+    position: relative;
+    color: #fce835;
+    top: 10%;
+    z-index: 1000;
+    opacity: 1;
+    font-size: 12em;
+}
+
+.thumb a:hover .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .5;
+}
+

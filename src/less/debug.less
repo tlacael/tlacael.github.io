@@ -1,0 +1,28 @@
+// main: styles.less
+// out: null
+
+
+div[class="row"] {
+    border: 1px dotted rgba(0, 0, 0, 1);
+}
+
+
+.sp-cols, .extra-page-cols {
+    background-color: rgba(255, 0, 0, 0.2);
+
+    @media (min-width: @screen-xs) {
+        background-color: rgba(255, 153, 0, 0.2);
+    }
+
+    @media (min-width: @screen-sm) {
+        background-color: rgba(255, 255, 0, 0.2);
+    }
+
+    @media (min-width: @screen-md) {
+        background-color: rgba(0, 255, 0, 0.2);
+    }
+
+    @media (min-width: @screen-lg) {
+        background-color: rgba(0, 0, 255, 0.2);
+    }
+}
