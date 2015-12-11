@@ -68,6 +68,7 @@ html body {
     border: 0;
 }
 
+
 .nav {
     > li {
         > a {
@@ -388,60 +389,40 @@ div[id="video"]{
 
 
 
-.wcid_left_text{
-    .make-xs-column(12);
-}
-
-
-/*This controls the columns for the What can it do? section */
-
-
-
-.wcid_left_text{
-    .make-xs-column(12);
-    @media (min-width: @screen-sm) {
-        .make-sm-column(8);
-    }
-}
-
-
-.wcid_right_vid{
-    .make-xs-column(12);
-    @media (min-width: @screen-sm) {
-        .make-sm-column(4);
-    }
-}
-
-
-
-.wcid_left_vid{
-    .make-xs-column(12);
-    @media (min-width: @screen-sm) {
-        .make-sm-column(4);
-        .make-sm-column-pull(8);
-    }
-}
-
-.wcid_right_text{
-    .make-xs-column(12);
-    @media (min-width: @screen-sm) {
-        .make-sm-column(8);
-        .make-sm-column-push(4);
-    }
-}
-
-.wcid_right_title{
-    .make-xs-column(12);
-    @media (min-width: @screen-sm) {
-        .make-sm-column(5);
-        .make-sm-column-offset(5);
-    }
-}
-
 
 .top-image{
-    padding: 0px;   
+    padding: 0px;
 }
+
+
+//tabs in the technology page
+.sp-tabs {
+    margin-bottom: 35px;
+
+    li {
+        background-color: white;
+        border: 1px solid @primary;
+    }
+    li.active{
+        background-color: @primary;
+    }
+}
+
+@media (min-width: 0px) {
+
+        .nav-justified > li {
+            display: table-cell;
+            width: 1%;
+            li.active{
+                background-color: @primary;
+            }
+            > a{
+                background: none!important;
+            }
+        }
+
+}
+
 
 
 
@@ -464,44 +445,4 @@ div[id="video"]{
 
 
 
-.thumb a {
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 95%;
-    height: 100%;
-    text-align: center;
-    text-decoration: none;
-}
-
-.thumb a .play,
-.thumb a .overlay {
-    opacity: 0;
-}
-
-.thumb a:hover .play,
-.thumb a:hover .overlay {
-    display: block;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
-}
-
-.thumb a:hover .play {
-    position: relative;
-    color: #fce835;
-    top: 10%;
-    z-index: 1000;
-    opacity: 1;
-    font-size: 12em;
-}
-
-.thumb a:hover .overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: .5;
-}
 

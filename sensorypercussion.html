@@ -22,7 +22,7 @@
     <body>
 
         <!-- Navigation-->
-        <nav class="navbar navbar-fixed-top navbar-default transparent">
+        <nav class="navbar navbar-fixed-top navbar-default transparent sp-navbar">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -75,72 +75,65 @@
                     <div class="sp-cols">
                         <h1>What can it do?</h1>
                         <p>Sensory Percussion doesn’t work like the usual e-drums and triggers. It uses a combination of software and hardware to create an overlay on acoustic drums that turns your kit into an expressive controller for digital sounds. SP does trigger sounds—but it can also do so much more:</p>
+                    </div> <!-- ./sp-cols -->
+                </div> <!-- ./row  -->
 
-                        <div class="row">
-                            <div class="wcid_left_text"><h3>assign sounds</h3></div>
-                            <div class="wcid_left_text">
+
+                <div class="row">
+                    <div class="sp-cols">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-pills nav-justified sp-tabs navbar-default" role="tablist" id="">
+                            <li class="active"><a href="#sounds" aria-controls="sounds" role="tab" data-toggle="tab">assign sounds</a></li>
+                            <li><a href="#blends" aria-controls="blends" role="tab" data-toggle="tab">blends</a></li>
+                            <li><a href="#effects" aria-controls="effects" role="tab" data-toggle="tab">effects</a></li>
+                            <li><a href="#chain" aria-controls="chain" role="tab" data-toggle="tab">side chain</a></li>
+                            <li><a href="#cross-talk" aria-controls="cross-talk" role="tab" data-toggle="tab">cross-talk</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content clearfix">
+                            <div role="tabpanel" class="tab-pane active" id="sounds">
                                 <p><strong>1. Assign sounds to different parts of the drum or even different drum strokes.</strong> Use the entire surface of the drum—rim shots, cross-sticks, different parts of the head and rim—for a flexible, fully responsive playing experience.</p>
-                            </div> <!-- ./left_text -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/hX6Exk4zPcQ?rel=0&amp;showinfo=0"></iframe>
+                                </div>
+                            </div> <!-- tabpanel-->
 
-                            <div class="wcid_right_vid thumb">
-                                <a href="https://www.youtube.com/watch?v=hX6Exk4zPcQ" data-toggle="lightbox">
-                                    <span class="play img-responsive">&#9658;</span>
-                                    <div class="overlay img-responsive"></div>
-                                </a>
-                                <img src="img/YT_thumb_01.jpg" class="img-responsive">
-                            </div> <!-- ./right_vid -->
-                        </div> <!-- row -->
-
-                        <div class="row">
-                            <div class="wcid_right_text"><h3>blend between samples</h3></div>
-                            <div class="wcid_right_text">
+                            <div role="tabpanel" class="tab-pane" id="blends">
                                 <p><strong>2. Blend smoothly between two or more samples.</strong> Play between samples mapped to different regions—the system knows where you’re hitting and can blend between the sounds, erasing the sonic borders common to e-drums and sample pads.</p>
-                            </div> <!-- ./div 2-->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/COjdiUcuMAM?rel=0&amp;showinfo=0"></iframe>
+                                </div>
+                            </div> <!-- tabpanel-->
 
-                            <div class="wcid_left_vid">
-                                <a href="https://www.youtube.com/watch?v=COjdiUcuMAM" data-toggle="lightbox"><img src="img/YT_thumb_02.jpg" class="img-responsive"></a>  
-                            </div> <!-- ./left_vid -->
-                        </div> <!-- row -->
-
-                        <div class="row">
-                            <div class="wcid_left_text"><h3>effects</h3></div>
-                            <div class="wcid_left_text">
+                            <div role="tabpanel" class="tab-pane" id="effects">
                                 <p><strong>3. Apply effects to different parts of the drum.</strong> Map effects to follow your strokes—no more knobs and sliders, no more buttons and pads. You control the effects and parameters in a completely new and intuitive way… by playing the drums.</p>
-                            </div> <!-- ./div 3-->
 
-                            <div class="wcid_right_vid">
-                                <a href="https://www.youtube.com/watch?v=wpfpDbpWO9o" data-toggle="lightbox"><img src="img/YT_thumb_03.jpg" class="img-responsive"></a>                        
-                            </div> <!-- ./col-md-3 -->
-                        </div> <!-- row -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/wpfpDbpWO9o?rel=0&amp;showinfo=0"></iframe>
+                                </div> <!-- video -->
 
-                        <div class="row">    
-                            <div class="wcid_right_text"><h3>side chain</h3></div>
-
-                            <div class="wcid_right_text">
+                            </div> <!-- tabpanel-->
+                            <div role="tabpanel" class="tab-pane" id="chain">
                                 <p><strong>4. Apply effects controls across multiple drums to achieve higher levels of sound control.</strong> Pitch shift the entire kit, control filters to drop the bass... or use reverb and delays to make a full-fledged dub kit.</p>
-                            </div> <!-- ./div 4-->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/f8RrqNb7LOA?rel=0&amp;showinfo=0"></iframe>
+                                </div> <!-- video -->
 
-                            <div class="wcid_left_vid">
-                                <a href="https://www.youtube.com/watch?v=f8RrqNb7LOA" data-toggle="lightbox"><img src="img/YT_thumb_04.jpg" class="img-responsive"></a> 
-                            </div> <!-- ./col-md-3 -->
 
-                        </div> <!-- row -->
-
-                        <div class="row">
-                            <div class="wcid_left_text"><h3>cross-talk cancellation</h3></div>
-                            <div class="wcid_left_text">
+                            </div> <!-- tabpanel-->
+                            <div role="tabpanel" class="tab-pane" id="cross-talk">
                                 <p><strong>5. Use smart cross-talk cancellation to maintain high sensitivity in the presence of loud ambient noise (i.e. kick drum vibrating the snare drum).</strong></p>
-                            </div> <!-- ./div 5-->
-
-                            <div class="wcid_right_vid">
-                                <a href="https://www.youtube.com/watch?v=LksIvjrlHZ8" data-toggle="lightbox"><img src="img/YT_thumb_05.jpg" class="img-responsive"></a> 
-                            </div> <!-- vid 5 -->
-                        </div> <!-- ./row 5-->
-
-                    </div> <!-- ./div sp-cols -->
-                </div> <!-- ./row outer -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/LksIvjrlHZ8?rel=0&amp;showinfo=0"></iframe>
+                                </div> <!-- video -->
+                            </div> <!-- tabpanel-->
+                        </div> <!-- tabcontent-->
+                    </div> <!-- ./sp-cols -->
+                </div> <!-- ./row  -->
 
             </div> <!-- ./container -->
+
             <div class="container-fluid"> 
                 <div class="row footer">
                     <div class="container" id="footer-container">
