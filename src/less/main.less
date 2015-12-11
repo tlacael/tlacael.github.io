@@ -359,6 +359,30 @@ h1[id="about-h1"]{
 }
 
 
+
+#about-bullets{
+    ul{
+        list-style: none;
+        text-indent: -1.6em;
+        padding-left: 1.6em ;
+        p{
+            font-family: "ITCAvantGardePro"!important;
+            font-size: 18pt;
+        }
+    }
+
+
+    li:before{
+        content: "⦿"; /* Insert content that looks like bullets */
+        float: left;
+        width: 1.6em;
+        padding-bottom: 5px;
+
+    }
+
+}
+
+
 div[id="video"]{
     .embed-responsive{
         margin-top: 40px;
@@ -390,8 +414,10 @@ div[id="video"]{
 
 
 
-.top-image{
+#top-image{
     padding: 0px;
+    max-height: 50%;
+
 }
 
 
@@ -400,8 +426,12 @@ div[id="video"]{
     margin-bottom: 35px;
 
     li {
+
         background-color: white;
         border: 1px solid @primary;
+        a {
+
+        }
     }
     li.active{
         background-color: @primary;
@@ -409,18 +439,19 @@ div[id="video"]{
 }
 
 
-@media (min-width: 0px) {
 
-        .nav-justified > li {
-            display: table-cell;
-            width: 1%;
-            li.active{
-                background-color: @primary;
-            }
-            > a{
-                background: none!important;
-            }
+
+@media (min-width: 0px) {
+    .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+        li.active{
+            background-color: @primary;
         }
+        > a{
+            background: none!important;
+        }
+    }
 
 }
 
