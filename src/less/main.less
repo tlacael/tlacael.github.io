@@ -105,7 +105,7 @@ html body {
 }
 
 /* This is for the hamburger menu for mobile */
-// Normal
+
 .navbar-toggle {
     border: none;
     background: transparent !important;
@@ -157,13 +157,60 @@ html body {
 }
 
 
-
+/*   Kickstarter Section   */
 
 //For centering an element in its parent row
 .vcenter {
     display: flex;
     align-items: center;
 }
+
+#funded_with_ks_image{
+    text-align: center;
+    img{
+    max-height: 150px;
+    }
+
+    .make-xs-column(12);
+
+    @media (min-width: @screen-xs) {
+        .make-xs-column(3);
+        .make-xs-column-offset(1);
+    }
+
+    @media (min-width: @screen-sm) {
+        .make-sm-column(3);
+        .make-sm-column-offset(2)
+    }
+
+    @media (min-width: @screen-md) {
+        .make-md-column(3);
+        .make-md-column-offset(2)
+    }
+}
+
+
+#funded_with_ks_text{
+    .make-xs-column(12);
+
+    @media (min-width: @screen-xs) {
+        .make-xs-column(7);
+        //.make-xs-column-offset(1);
+    }
+
+    @media (min-width: @screen-sm) {
+        .make-sm-column(5);
+//        .make-sm-column-offset(2)
+    }
+
+    @media (min-width: @screen-md) {
+        .make-md-column(5);
+//        .make-md-column-offset(2)
+    }
+
+}
+
+
 
 /* Intro image parallax and style */
 .jumbotron{
@@ -228,13 +275,6 @@ div[id=kickstarter-btn]{
 //this is for screens larger than mobile
 @media (min-width: @screen-xs) {
     div[id=kickstarter-btn]{
-        //        width: 100%;
-        //        max-width: 500px;
-        //        height: 100%;
-        //        margin-right: 25px; margin-bottom:25px;
-        //        position: relative;
-        //        bottom: 50px; right: 10px; left:10px;
-        //        float: right;
         width: 100%;
         max-width: 500px;
         height: 90%;
@@ -272,7 +312,6 @@ div[id=kickstarter-btn]{
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
     top: @cover-height;
-    //min-height: 100% - @cover-height;
     min-height: 1%;
     width: 100%;
     z-index: 2;
@@ -302,8 +341,6 @@ div[id=kickstarter-btn]{
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
-
 
 
 div[id="follow"]{
@@ -370,7 +407,6 @@ div[id="follow"]{
 
 
 
-
 h1[id="about-h1"]{
     margin-top: 5px;
 }
@@ -388,6 +424,7 @@ h1[id="about-h1"]{
         }
     }
 
+    li {padding-bottom: 10px;}
 
     li:before{
         content: "⦿"; /* Insert content that looks like bullets */
@@ -453,11 +490,11 @@ div[id="video"]{
 
 /*
 .nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix
-    zoom:1; /* hasLayout ie7 trigger
-    margin-bottom: 5px;
+float:none;
+display:inline-block;
+*display:inline; /* ie7 fix
+zoom:1; /* hasLayout ie7 trigger
+margin-bottom: 5px;
 }
 
 */
