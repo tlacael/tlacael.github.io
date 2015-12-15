@@ -438,30 +438,40 @@ div[id="video"]{
 }
 
 
-//tabs in the technology page
+/******** tabs in the technology page ********/
+
 .sp-tabs {
     margin-bottom: 35px;
-
     li {
-
-        background-color: white;
-        border: 1px solid @primary;
-        a {
-
-        }
+    background-color: white;
+    border: 1px solid @primary;
     }
     li.active{
         background-color: @primary;
     }
+    @media (min-width: 0px) {
+
+    }
+
 }
 
 
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+    margin-bottom: 5px;
+}
+
+/* center tabs */
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
 
 
 @media (min-width: 0px) {
-    .nav-justified > li {
-        display: table-cell;
-        width: 1%;
+    .nav-pills > li {
         li.active{
             background-color: @primary;
         }
@@ -469,7 +479,6 @@ div[id="video"]{
             background: none!important;
         }
     }
-
 }
 
 
