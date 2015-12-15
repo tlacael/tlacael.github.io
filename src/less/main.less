@@ -168,7 +168,7 @@ html body {
 #funded_with_ks_image{
     text-align: center;
     img{
-    max-height: 150px;
+        max-height: 150px;
     }
 
     .make-xs-column(12);
@@ -200,12 +200,12 @@ html body {
 
     @media (min-width: @screen-sm) {
         .make-sm-column(5);
-//        .make-sm-column-offset(2)
+        //        .make-sm-column-offset(2)
     }
 
     @media (min-width: @screen-md) {
         .make-md-column(5);
-//        .make-md-column-offset(2)
+        //        .make-md-column-offset(2)
     }
 
 }
@@ -406,14 +406,12 @@ div[id="follow"]{
 }
 
 
-
-h1[id="about-h1"]{
-    margin-top: 5px;
+#about_section{
+    h1{margin-top: 5px;}
 }
 
-
-
 #about-bullets{
+    padding-top:0;
     ul{
         list-style: none;
         text-indent: -1.6em;
@@ -431,9 +429,7 @@ h1[id="about-h1"]{
         float: left;
         width: 1.6em;
         padding-bottom: 5px;
-
     }
-
 }
 
 
@@ -479,42 +475,45 @@ div[id="video"]{
 
 .sp-tabs {
     margin-bottom: 35px;
+    text-align:center;
+    a{ background:none!important; }
     li {
+        float:none;
+        display:inline-block;
+        *display:inline; /* ie7 fix */
+        zoom:1; /* hasLayout ie7 trigger */
+        margin-bottom: 5px;
+        //        display: inline-block;
         background-color: white;
         border: 1px solid @primary;
     }
-    li.active{
+    li.active {
         background-color: @primary;
     }
 }
 
-/*
-.nav-tabs > li, .nav-pills > li {
-float:none;
-display:inline-block;
-*display:inline; /* ie7 fix
-zoom:1; /* hasLayout ie7 trigger
-margin-bottom: 5px;
-}
-
-*/
-.nav-tabs, .nav-pills {
-    text-align:center;
-}
-
-
-@media (min-width: 0px) {
-    .nav-pills > li {
-        li.active{
-            background-color: @primary;
-        }
-        > a{
-            background: none!important;
-        }
+// Fix tabs on larger screens
+@media (min-width: @screen-sm){
+    .nav-justified > li {
+        display:inline-block!important;
+        width:auto;
     }
 }
 
+@media (max-width:@screen-xs){
+    .sp-tabs{
+        margin-bottom: 10px;
+        li{
+            a{
+                padding-right: 8px;
+                padding-left: 8px;
+                padding-top:7px;
+                padding-bottom: 0px;
 
+            }
+        }
+    }
+}
 
 
 /* This controls the grid for the various media queries for extra pages... confirm, thanks, etc.*/
