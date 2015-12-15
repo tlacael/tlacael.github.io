@@ -241,7 +241,7 @@ position: fixed !important;
 // Adjust the logo size on mobile devices
 div[id=logo]{
     width: 100%;
-    max-width: 800px;
+    max-width: 750px;
     height: 90%;
     margin-left:25px; margin-top:25px;
     position: absolute;
@@ -249,9 +249,11 @@ div[id=logo]{
     //text-align: center;
 
     img[id=hero]{
-        width: 50%;
+        width: 40%;
         height: auto;
-
+        @media (max-width: @screen-xs) {
+            width: 70%;
+        }
     }
 }
 
@@ -269,8 +271,6 @@ div[id=kickstarter-btn]{
         bottom: 80px;
     }
 }
-
-
 
 //this is for screens larger than mobile
 @media (min-width: @screen-xs) {
@@ -303,7 +303,9 @@ div[id=kickstarter-btn]{
     left: 0;
     color: white;
 
+    //make the chevron smaller and lower on mobile
     @media (max-width: @screen-xs) {
+        bottom: 20px;
         i{
             font-size: 4em!important;
         }
