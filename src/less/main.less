@@ -63,15 +63,30 @@ html body {
 
 /* navbar */
 
+.nav{
+    navbar-fixed-top{
+    }
+}
+
+// This makes the nav narrow so it doesn't block hovers on the underlying page.
+#nav-container{
+    width: 200px;
+    right: 15px!important;
+    left: auto;
+
+}
+
 .navbar{
     background:none;
     border: 0;
+    width: auto;
 }
 
 
 .nav {
     > li {
         > a {
+
             font-family: "ITCAvantGardePro";
             padding: @nav-link-padding;
             background-color: @accent-color;
@@ -140,6 +155,8 @@ html body {
 .navbar-collapse.collapse {
     border-top: none!important;
 }
+
+
 
 
 //For centering an element in its parent row
