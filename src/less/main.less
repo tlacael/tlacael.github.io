@@ -526,6 +526,32 @@ div[id="video"]{
 }
 
 
+.sp-btn{
+    background-color: white;
+    border: 1px solid @primary;
+    border-radius:0px;
+    color: @primary;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    .transition(.2s);
+}
+
+.sp-btn:hover, .sp-btn:focus{
+    border: none;
+    color: white;
+    background-color: @accent-color;
+}
+
+#preorder-now{
+    padding-top:0px;
+    padding-bottom: 60px;
+}
+
+
 /* This controls the grid for the various media queries for extra pages... confirm, thanks, etc.*/
 .extra-page-cols{
     .make-xs-column(12);
