@@ -154,6 +154,7 @@
 </div> <!-- ./container-fluid -->
 
 <!------------------ Begin FAQ ------------------->
+
             <div class="row">
 
                 <div class="sp-cols">
@@ -163,13 +164,13 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Is it possible to attach the SP Sensor to a hand drum, such as a conga, djembe or cajon?
+                                        Can I use Sensory Percussion with hand drums, such as a conga, djembe or cajon?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    <p>The sensor we designed only fits drums with a metal rim or hoop: basically all the drums in a standard kit (snare, toms, kick). For our first version, we wanted to build something that was going to be secure as well as flexible for kit players. The sensor is unique in that it fits both snares and kick drums. Unfortunately, that means our hardware doesn’t really work on hand drums –– there’s a lot of variability on hand drums and we couldn’t find an obvious way to attach the sensor. It’s definitely something we want to tackle soon but couldn’t fit it into version one.</p>
+                                    <p>The sensor we designed only fits drums with a metal rim or hoop: basically all the drums in a standard kit (snare, toms, kick). For our first version, we wanted to build something that was going to be secure as well as flexible for kit players. The sensor is unique in that it fits both snares and kick drums. Unfortunately, that means our hardware doesn’t really work on hand drums.</p>
                                 </div>
                             </div>
                         </div>
@@ -183,13 +184,11 @@
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    <p>Sensory Percussion does need a standard audio interface to convert the analog audio signal coming from the SP Sensor into a digital signal our software can process. Also, the interface needs to provide 48V phantom power to the SP Sensor to power the circuit that mixes the two sensor signals (one for the head and one for the rim) down to mono audio. This kind of phantom is a standard feature of audio interfaces with microphone preamps.</p>
+                                    <p>Sensory Percussion needs a standard audio interface to convert the analog audio signal coming from the SP Sensor into a digital signal our software can process. Also, the interface needs to provide 48V phantom power to the SP Sensor. This kind of phantom is a standard feature of audio interfaces with microphone preamps.</p>
 
-                                    <p>We’ve had great success with several USB and Firewire interfaces and haven’t noticed a big difference in latency from the inexpensive to expensive ones. We’ve used everything from $40 single channel interfaces for very simple single drum setups, to four-channel USB interfaces from PreSonus, Apogee, Focusrite and MOTU. We like the MOTU because it has very handy VU meters on the outside and is reliable and sturdy.</p>
+                                    <p>We’ve had great success with several USB, Firewire and Thunderbolt interfaces. We’ve used everything from $40 single channel interfaces for very simple single drum setups, to four-channel USB interfaces from PreSonus, Apogee, Focusrite and MOTU. We like the MOTU because it has very handy VU meters on the outside and is reliable and sturdy.</p>
 
-                                    <p>We’ve had some consistency issues with Thunderbolt interfaces we’ve tried, but we need to do more testing on that front.</p>
-
-                                    <p>If you have any questions about your specific interface, don’t hesitate to get in touch with us and we’ll do what we can to help. The most important thing to remember regarding interfaces is that it needs to have as many 48v phantom powered input channels as sensors you want to use.</p>
+                                    <p>If you have any questions about your specific interface, don’t hesitate to get in touch with us and we’ll do what we can to help. The most important thing to remember regarding interfaces is that it needs to have as many 48v phantom powered XLR input channels as sensors you want to use.</p>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +203,7 @@
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    <p>Unfortunately, Sensory Percussion will not support Linux at launch. We support Mac OS X and Windows. We’d love to support as many platforms as possible, but each greatly increases the development and testing overhead for our very small team.</p>
+                                    <p>Unfortunately, Sensory Percussion will not support Linux at launch. We support Mac OS X and Windows. We’d love to support as many platforms as possible, but each additional platform greatly increases the development and testing overhead for our small team.</p>
                                 </div>
                             </div>
                         </div>
@@ -219,9 +218,9 @@
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                 <div class="panel-body">
-                                    <p>Our software can either be run as a standalone app––which will have a fully built out sampler, synth engine and effects and will support MIDI output––or it can be run as a VST inside a host like Ableton Live. We’re only planning on fully supporting Ableton at launch since we have limited resources for testing and licensing and it is the most sympathetic DAW to the goals of our system.</p>
+                                    <p>Our software runs as a standalone application on OSX or Windows and will have a fully built out sampler and effects and will support MIDI output.</p>
 
-<p>In all of our videos and demos, we are running Sensory Percussion as a standalone and sending MIDI to Ableton over a bus. This is mostly because our sampler and effects are not fully built yet, but this is also a good way of working with Ableton as it allows you to use SP as remote MIDI control - like a physical MIDI controller.</p>
+<p>MIDI out is a core feature of Sensory Percussion. You can send MIDI out over a bus and receive it in any other program (like a DAW) that understands MIDI. </p>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +235,7 @@
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                 <div class="panel-body">
-                                    <p>Yes! Surprisingly well, in fact. We were dubious about whether mesh heads would provide enough sonic information for our software, but they seem to work just fine. We tried the 14" Remo Silentstroke Mesh drum head.</p>
+                                    <p>Yes! Surprisingly well, in fact. Mesh heads are great for when you really want to focus on the electronic sounds (or if you have neighbors).</p>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +250,7 @@
                             </div>
                             <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                                 <div class="panel-body">
-                                    <p>We’re a super young company and right now are focused on getting Sensory Percussion built and out of the door. So at this point we just haven’t been able to setup an artist endorsement program. I’m sure we will once we launch. But until then, the best way to get Sensory Percussion is to support us here on Kickstarter. Make a pledge and spread the word!</p>
+                                    <p>We’re a super young company and are still working on setting up our artist endorsement program. Stay tuned for more info. </p>
                                 </div>
                             </div>
                         </div>
