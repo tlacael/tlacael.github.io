@@ -1,10 +1,4 @@
 # robotstxt.org/
 
-#User-agent: *
-#Allow: /
-#Disallow: /src/
-#Disallow: /confirm.html
-#Disallow: /thanks.html
-
 User-agent: *
 Disallow: /
